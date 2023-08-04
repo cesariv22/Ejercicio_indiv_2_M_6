@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".viewUI.FirstFragment">
+
+    <TextView
+        android:id="@+id/txvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="38dp"
+        android:text="@string/txv_name_item"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAddProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvTitle" />
+
+    <TextView
+        android:id="@+id/txvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:text="@string/txv_price_item"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/etAddPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNameItem" />
+
+    <TextView
+        android:id="@+id/txvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txv_almount"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvPrice" />
+
+    <EditText
+        android:id="@+id/etAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/etAddName"
+        android:ems="10"
+        android:hint="@string/etAddName"
+        android:inputType="text"
+        android:textColorHint="#8A000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvTitle" />
+
+    <EditText
+        android:id="@+id/etAddPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="@string/etAddPrice"
+        android:ems="10"
+        android:hint="@string/etAddPrice"
+        android:inputType="text"
+        android:textColorHint="#8A000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProduct" />
+
+    <EditText
+        android:id="@+id/etTotal"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="@string/etTotal"
+        android:ems="10"
+        android:hint="@string/etTotal"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#8A000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/btn_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTotal" />
+
+    <Button
+        android:id="@+id/buttonTotal"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/btn_look_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTotal" />
+
+    <Spinner
+        android:id="@+id/numberSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/numbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddPrice" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/txvTotal"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

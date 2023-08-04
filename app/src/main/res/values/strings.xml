@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Ejercicio_indiv_2_M_6</string>
+
+    <string name="title">Registro de Consumo</string>
+    <string name="txv_name_item">Nombre del Item</string>
+    <string name="txv_price_item">Precio Unidad</string>
+    <string name="txv_almount">Cantidad</string>
+    <string name="txv_total">Total Actual</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_look_total">Ver Consumos</string>
+    <string name="btn_back">Volver</string>
+    <string name="etAddName">Ingrese Producto</string>
+    <string name="etAddPrice">Ingrese Precio</string>
+    <string name="txvTotal">Monto Total</string>
+    <string name="etTotal">Total</string>
+    <string name="txt_titleTwo">Detalle Consumo</string>
+    <string name="product">Producto</string>
+    <string name="price">Precio</string>
+    <string name="units">Unidades</string>
+    <string name="subTotal">SubTotal</string>
+    <string name="totalRegister">Total Consumo</string>
+    <string name="totalValue">Valor</string>
+    <string name="btnDeleteList">Borrar Lista</string>
+
+
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+</resources>
